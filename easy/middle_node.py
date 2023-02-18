@@ -12,13 +12,16 @@
 # Output: [4,5,6]
 # Explanation: Since the list has two middle nodes with values 3 and 4, we return the second one.
 
-#https://leetcode.com/problems/middle-of-the-linked-list/description/
+# https://leetcode.com/problems/middle-of-the-linked-list/description/
 
 from typing import Optional
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
 
@@ -27,7 +30,7 @@ def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
         return
 
     # Initialize two pointers, slow and fast, to point to the head of the list
-    slow = fast = head 
+    slow = fast = head
 
     # While the fast pointer and the node after it are not None, increment the slow pointer by one and the fast pointer by two
     while fast and fast.next:
