@@ -26,7 +26,7 @@
 
 from typing import List
 
-
+# dfs
 def numIslands(grid: List[List[str]]) -> int:
 
     r, c = len(grid), len(grid[0])
@@ -52,3 +52,36 @@ def numIslands(grid: List[List[str]]) -> int:
                 dfs(i, j)
 
     return count
+
+
+# bfs
+from collections import deque
+
+
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+
+        row, col = len(grid), len(grid[0])
+        count = 0
+
+        def bfs(i, j):
+            queue = deque()
+            queue.append((i, j))
+
+            while queue:
+                r, c = queue.popleft()
+                if r < 0 or r >= row or c < 0 or c >= col or grid[r][c] == "0":
+                    continue
+
+                grid[r][c] = "0"
+                bfs(r, c + 1)
+                bfs(r, c - 1)
+                bfs(r + 1, c)
+                bfs(r - 1, c)
+
+        for i in range(row):
+            for j in range(col):
+                if grid[i][j] == "1":
+                    count += 1
+                    bfs(i, j)
+        return count
