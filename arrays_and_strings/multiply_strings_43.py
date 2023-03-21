@@ -1,18 +1,19 @@
-# Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
+"""
+    Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
 
-# Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
+    Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
 
 
-# Example 1:
+    Example 1:
+    Input: num1 = "2", num2 = "3"
+    Output: "6"
 
-# Input: num1 = "2", num2 = "3"
-# Output: "6"
-# Example 2:
+    Example 2:
+    Input: num1 = "123", num2 = "456"
+    Output: "56088"
 
-# Input: num1 = "123", num2 = "456"
-# Output: "56088"
-
-# https://leetcode.com/problems/multiply-strings/description/?envType=study-plan&id=level-2
+    https://leetcode.com/problems/multiply-strings/description/?envType=study-plan&id=level-2
+"""
 
 
 def multiply(num1: str, num2: str) -> str:
