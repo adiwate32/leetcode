@@ -16,7 +16,6 @@ from typing import List
 
 class Solution:
     def longestLine(self, mat: List[List[int]]) -> int:
-
         if not mat:
             return 0
 

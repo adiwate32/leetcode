@@ -31,6 +31,7 @@
 """
 from typing import Optional
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -41,7 +42,6 @@ class TreeNode:
 
 class Solution:
     def reverseOddLevels(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-
         q = [root]
         reverse = False
 
@@ -57,7 +57,6 @@ class Solution:
                     right -= 1
 
             for _ in range(size):
-
                 node = q.pop(0)
 
                 if node.left:

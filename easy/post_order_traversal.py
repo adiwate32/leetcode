@@ -26,13 +26,11 @@ class TreeNode:
 
 
 def post_order_traversal(root: Optional[TreeNode]) -> List[int]:
-
     stack = [root]
 
     res = []
 
     while stack:
-
         node = stack.pop()
 
         if node:

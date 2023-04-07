@@ -24,7 +24,6 @@ from typing import List
 
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
-
         # Get the length of the window to search for
         window = len(p)
 

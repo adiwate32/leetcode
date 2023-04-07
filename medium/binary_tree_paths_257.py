@@ -14,6 +14,7 @@
 
 from typing import Optional, List
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -24,14 +25,12 @@ class TreeNode:
 
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
-
         if not root:
             return []
 
         res = []
 
         def paths(root, path):
-
             if not any([root.left, root.right]):
                 res.append(path)
 

@@ -34,7 +34,6 @@ from typing import List
 
 class Solution:
     def maximumScore(self, nums: List[int], multipliers: List[int]) -> int:
-
         m = len(multipliers)
         n = len(nums)
 

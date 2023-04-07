@@ -14,6 +14,7 @@
 
 from typing import Optional, List
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -24,7 +25,6 @@ class TreeNode:
 
 class Solution:
     def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:
-
         queue = [root]
         res = []
 

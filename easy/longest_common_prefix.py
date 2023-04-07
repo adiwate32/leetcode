@@ -33,7 +33,6 @@ def longest_common_prefix_1(strs: List[str]) -> str:
 
 
 def longest_common_prefix_2(strs: List[str]) -> str:
-
     if not strs:
         return ""
 

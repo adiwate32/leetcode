@@ -19,13 +19,10 @@
 
 
 def removeDigit(nums: str, digit: str) -> str:
-
     res = []
 
     for i in range(len(nums)):
-
         if nums[i] == digit:
-
             res.append(nums[:i] + nums[i + 1 :])
 
     return max(res)

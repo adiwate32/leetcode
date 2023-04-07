@@ -26,6 +26,7 @@ class Solution:
 
         stack = []
         visited, cycle = set(), set()
+
         # define the dfs function
         def dfs(crs):
             # if a cycle is detected, return False

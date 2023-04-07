@@ -26,7 +26,6 @@
 
 
 def firstBadVersion(n: int) -> int:
-
     if n == 1:
         return 1
 
@@ -39,11 +38,9 @@ def firstBadVersion(n: int) -> int:
             return mid
 
         if isBadVersion(mid - 1) == True and isBadVersion(mid) == True:
-
             right = mid - 1
 
         if isBadVersion(mid - 1) == False and isBadVersion(mid) == False:
-
             left = mid + 1
 
     return left

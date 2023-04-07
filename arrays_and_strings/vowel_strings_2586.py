@@ -31,7 +31,6 @@ from typing import List
 
 class Solution:
     def vowelStrings(self, words: List[str], left: int, right: int) -> int:
-
         count = 0
         vowels = {"a", "e", "i", "o", "u"}
 

@@ -19,7 +19,6 @@ from typing import List
 
 class Solution:
     def sumSubarrayMins(self, arr: List[int]) -> int:
-
         stack = []
         MOD = 10**9 + 7
 

@@ -17,6 +17,8 @@
     Input: root = [2,1], p = 2, q = 1
     Output: 2
 """
+
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
@@ -29,7 +31,6 @@ class Solution:
     def lowestCommonAncestor(
         self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
     ) -> "TreeNode":
-
         pval = p.val
 
         qval = q.val
@@ -37,7 +38,6 @@ class Solution:
         node = root
 
         while node:
-
             if pval > node.val and qval > node.val:
                 node = node.right
 

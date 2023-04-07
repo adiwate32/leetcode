@@ -19,7 +19,6 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-
         dp = {}
 
         def dfs(i, buying):
@@ -44,6 +43,7 @@ class Solution:
 
 
 import math
+
 
 # dp approach
 class Solution:

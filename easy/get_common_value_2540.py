@@ -18,7 +18,6 @@ from typing import List
 
 class Solution:
     def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
-
         arr1 = nums2 if len(nums1) > len(nums2) else nums1
         arr2 = nums1 if len(nums1) > len(nums2) else nums2
 

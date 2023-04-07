@@ -28,7 +28,6 @@ class Solution:
 
         # Iterate through the sorted list of numbers and calculate the length of the longest consecutive sequence
         for i in range(1, len(nums)):
-
             # If the current number is one greater than the previous number, increase the current streak by 1
             if nums[i] == nums[i - 1] + 1:
                 curr_streak += 1

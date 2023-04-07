@@ -46,10 +46,8 @@ from typing import List
 
 
 def remove_element(nums: List[int], val: int) -> int:
-
     res = 0
     for j in range(len(nums)):
-
         if nums[j] != val:
             nums[res] = nums[j]
             res += 1

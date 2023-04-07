@@ -18,7 +18,6 @@ from typing import List
 
 class Solution:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
-
         r, c = len(grid), len(grid[0])
 
         visited = [[False for _ in range(c)] for _ in range(r)]
@@ -33,7 +32,6 @@ class Solution:
 
         for i in range(r):
             for j in range(c):
-
                 if not visited[i][j] and grid[i][j] == 1:
                     island_cnt = dfs(i, j)
                     max_count = max(max_count, island_cnt)

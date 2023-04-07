@@ -30,7 +30,6 @@ from collections import defaultdict
 
 class Solution:
     def longestCommonSubsequence(self, arrays: List[List[int]]) -> List[int]:
-
         hash_map = defaultdict(int)
         n = len(arrays)
 

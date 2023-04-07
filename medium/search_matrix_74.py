@@ -19,13 +19,11 @@ from typing import List
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-
         rows, cols = len(matrix), len(matrix[0])
         left = 0
         right = rows * cols - 1
 
         while left <= right:
-
             # Compute the index of the pivot element and get its value
             pivot = (left + right) // 2
             pivot_ele = matrix[pivot // cols][pivot % cols]

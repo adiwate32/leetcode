@@ -17,7 +17,6 @@
 
 
 def multiply(num1: str, num2: str) -> str:
-
     # If either of the inputs is "0", return "0"
     if num1 == "0" or num2 == "0":
         return "0"
@@ -32,10 +31,8 @@ def multiply(num1: str, num2: str) -> str:
 
     # Loop through each digit in the first number
     for i1 in range(len(nums1)):
-
         # Loop through each digit in the second number
         for i2 in range(len(nums2)):
-
             # Multiply the digits and add them to the intermediate results list
             digit = int(nums1[i1]) * int(nums2[i2])
             res[i1 + i2] += digit

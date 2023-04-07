@@ -20,7 +20,6 @@ from typing import List
 
 class Solution:
     def minFallingPathSum(self, grid: List[List[int]]) -> int:
-
         rows = len(grid)
         cols = len(grid[0])
 

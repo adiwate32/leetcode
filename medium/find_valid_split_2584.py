@@ -24,7 +24,6 @@ from typing import List
 
 class Solution:
     def findValidSplit(self, nums: List[int]) -> int:
-
         i = 0
         left = 1
         n = len(nums)

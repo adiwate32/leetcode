@@ -30,14 +30,12 @@ class ListNode:
 def add_two_numbers(
     l1: Optional[ListNode], l2: Optional[ListNode]
 ) -> Optional[ListNode]:
-
     carry = 0
 
     dummy_head = ListNode(0)
     curr = dummy_head
 
     while l1 or l2 or carry:
-
         if l1:
             l1val = l1.val
             l1 = l1.next

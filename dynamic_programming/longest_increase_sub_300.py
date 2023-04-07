@@ -22,7 +22,6 @@ from typing import List
 
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
-
         max_val = 0
         n = len(nums)
 

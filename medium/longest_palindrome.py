@@ -31,7 +31,6 @@ from typing import List
 
 
 def longestPalindrome(words: List[str]) -> int:
-
     # Initialize a dictionary to keep track of the frequency of each word
     d = {}
     # Initialize a variable to keep track of the maximum length of the palindrome
@@ -56,7 +55,6 @@ def longestPalindrome(words: List[str]) -> int:
 
     # Iterate through each word and its frequency in the dictionary
     for word, count_word in d.items():
-
         # If the word is a palindrome
         if ispalindrome(word):
             # If the frequency of the word is even, add 2 times the frequency to the maximum length

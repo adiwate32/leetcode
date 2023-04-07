@@ -16,6 +16,7 @@
 
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -24,7 +25,6 @@ class ListNode:
 
 
 def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
-
     i = 0
 
     # Create a new ListNode and set its next node to the head of the linked list.

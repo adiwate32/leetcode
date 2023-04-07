@@ -22,12 +22,10 @@
 
 
 def transform_string(s: str) -> str:
-
     index_mapping = {}
     new_str = []
 
     for index, char in enumerate(s):
-
         if char not in index_mapping:
             index_mapping[char] = index
 

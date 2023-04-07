@@ -24,13 +24,11 @@ from typing import List
 
 class Solution:
     def maxScore(self, nums: List[int]) -> int:
-
         nums.sort(reverse=True)
 
         ans, sum = 0, 0
 
         for i in range(len(nums)):
-
             sum += nums[i]
             if sum > 0:
                 ans += 1

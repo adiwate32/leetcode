@@ -22,14 +22,12 @@ from collections import Counter
 
 
 def uniqueOccurrences(arr: List[int]) -> bool:
-
     cntr = Counter()
 
     for i in arr:
         cntr[i] += 1
 
     if len(cntr) == len(set(cntr.values())):
-
         return True
 
     return False

@@ -24,7 +24,6 @@ class ListNode:
 
 
 def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
-
     # If the head is None, return None
     if not head:
         return

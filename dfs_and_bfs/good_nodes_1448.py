@@ -24,6 +24,8 @@
 
     https://leetcode.com/problems/course-schedule/description/
 """
+
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -34,7 +36,6 @@ class TreeNode:
 
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
-
         count = 0
 
         def dfs(node, max_val):

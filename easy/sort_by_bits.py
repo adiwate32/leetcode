@@ -24,7 +24,6 @@ from typing import List
 
 
 def sortByBits1(arr: List[int]) -> List[int]:
-
     arr = sorted(arr)
 
     bits_map = {}
@@ -32,11 +31,9 @@ def sortByBits1(arr: List[int]) -> List[int]:
         return arr
 
     for i in arr:
-
         temp = i
         cnt = 0
         while temp > 0:
-
             if temp % 2 != 0:
                 cnt += 1
             temp = temp // 2
@@ -56,5 +53,4 @@ def sortByBits1(arr: List[int]) -> List[int]:
 
 
 def sortByBits2(arr: List[int]) -> List[int]:
-
     return sorted(sorted(arr), key=lambda x: bin(x).count("1"))

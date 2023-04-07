@@ -23,6 +23,7 @@
 from collections import defaultdict
 from typing import Optional
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -33,7 +34,6 @@ class TreeNode:
 
 class Solution:
     def amountOfTime(self, root: Optional[TreeNode], start: int) -> int:
-
         graph = defaultdict(list)
         stack = [(root, None)]
 

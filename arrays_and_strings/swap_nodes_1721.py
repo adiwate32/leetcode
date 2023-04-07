@@ -12,6 +12,7 @@
 """
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -21,7 +22,6 @@ class ListNode:
 
 class Solution:
     def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-
         count = 1
 
         left, right = head, head
@@ -29,7 +29,6 @@ class Solution:
         curr = head
 
         while curr:
-
             if count < k:
                 left = left.next
 

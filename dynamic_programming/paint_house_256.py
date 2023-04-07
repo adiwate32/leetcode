@@ -23,7 +23,6 @@ from typing import List
 
 class Solution:
     def minCost(self, costs: List[List[int]]) -> int:
-
         rows = len(costs)
         dp = [[0] * len(costs[0]) for _ in range(rows + 1)]
 

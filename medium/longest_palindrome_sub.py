@@ -19,7 +19,6 @@
 
 
 def longestPalindrome(s: str) -> str:
-
     res = ""
 
     maxlen = 0
@@ -28,7 +27,6 @@ def longestPalindrome(s: str) -> str:
     for i in range(len(s)):
         l, r = i, i
         while l >= 0 and r < len(s) and s[l] == s[r]:
-
             if (r - l + 1) > maxlen:
                 maxlen = r - l + 1
                 res = s[l : r + 1]
@@ -41,7 +39,6 @@ def longestPalindrome(s: str) -> str:
         l, r = i, i + 1
 
         while l >= 0 and r < len(s) and s[l] == s[r]:
-
             if (r - l + 1) > maxlen:
                 maxlen = r - l + 1
                 res = s[l : r + 1]

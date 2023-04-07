@@ -33,11 +33,9 @@ from typing import List
 
 
 def minDeletionSize(strs: List[str]) -> int:
-
     cntr = 0
 
     for i in range(len(strs[0])):
-
         for j in range(1, len(strs)):
             if strs[j][i] < strs[j - 1][i]:
                 cntr += 1

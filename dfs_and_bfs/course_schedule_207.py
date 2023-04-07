@@ -24,13 +24,11 @@ from collections import defaultdict
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-
         pre_map = defaultdict(list)
         for crs, pre in prerequisites:
             pre_map[crs].append(pre)
 
         def dfs(crs, pre_map, visited, cycle):
-
             if crs in cycle:
                 return False
 

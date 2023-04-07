@@ -21,7 +21,6 @@ from typing import List
 
 
 def search(nums: List[int], target: int) -> int:
-
     left, right = 0, len(nums) - 1
 
     while left <= right:

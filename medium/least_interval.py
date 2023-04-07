@@ -25,7 +25,6 @@ from typing import List
 
 
 def leastInterval(tasks: List[str], n: int) -> int:
-
     # Initialize a list to keep track of the frequency of each task
     freqs = [0] * 26
 

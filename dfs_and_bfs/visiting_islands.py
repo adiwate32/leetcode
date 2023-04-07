@@ -26,15 +26,14 @@
 
 from typing import List
 
+
 # dfs
 def numIslands(grid: List[List[str]]) -> int:
-
     r, c = len(grid), len(grid[0])
 
     visited = [[False for _ in range(c)] for _ in range(r)]
 
     def dfs(i, j):
-
         if i < 0 or j < 0 or j >= c or i >= r or visited[i][j] or grid[i][j] == "0":
             return
         visited[i][j] = True
@@ -46,7 +45,6 @@ def numIslands(grid: List[List[str]]) -> int:
     count = 0
     for i in range(r):
         for j in range(c):
-
             if not visited[i][j] and grid[i][j] == "1":
                 count += 1
                 dfs(i, j)
@@ -60,7 +58,6 @@ from collections import deque
 
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-
         row, col = len(grid), len(grid[0])
         count = 0
 

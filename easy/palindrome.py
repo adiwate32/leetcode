@@ -21,7 +21,6 @@
 
 
 def palindrome(x: int) -> bool:
-
     ans = 0
     original = x
 

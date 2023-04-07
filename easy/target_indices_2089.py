@@ -30,7 +30,6 @@ class Solution:
         lt_count = t_count = 0
 
         for num in nums:
-
             if num < target:
                 lt_count += 1
             elif num == target:

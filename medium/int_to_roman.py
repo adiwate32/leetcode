@@ -40,7 +40,6 @@ from typing import List
 
 
 def intToRoman(num: int) -> str:
-
     rm_dict = {
         1: "I",
         4: "IV",
@@ -60,7 +59,6 @@ def intToRoman(num: int) -> str:
     roman_str = ""
 
     while num != 0:
-
         big_val = max([val for val in rm_dict.keys() if val <= num])
 
         roman_str += rm_dict[big_val]

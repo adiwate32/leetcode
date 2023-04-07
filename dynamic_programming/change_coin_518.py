@@ -28,11 +28,9 @@ from typing import List
 
 class Solution:
     def change(self, amount: int, coins: List[int]) -> int:
-
         dp = {}
 
         def dfs(i, a):
-
             if a > amount:
                 return 0
 
@@ -55,7 +53,6 @@ class Solution:
 # 2dp
 class Solution:
     def change(self, amount: int, coins: List[int]) -> int:
-
         n = len(coins)
         dp = [[0] * (amount + 1) for _ in range(n + 1)]
 
@@ -75,7 +72,6 @@ class Solution:
 # 2dp
 class Solution:
     def change(self, amount: int, coins: List[int]) -> int:
-
         dp = [0] * (amount + 1)
 
         dp[0] = 1

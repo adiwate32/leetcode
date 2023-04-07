@@ -18,7 +18,6 @@ from typing import List
 
 
 def contains_duplicate(nums: List[int]) -> bool:
-
     freq = Counter(nums)
     freq_values = list(freq.values())
     freq_values.sort()

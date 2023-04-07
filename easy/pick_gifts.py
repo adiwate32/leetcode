@@ -34,7 +34,6 @@ import math
 
 
 def pickGifts(gifts: List[int], k: int) -> int:
-
     i = 0
 
     while i < k:

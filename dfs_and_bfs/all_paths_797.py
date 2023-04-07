@@ -17,7 +17,6 @@ from typing import List
 
 class Solution:
     def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
-
         res = []
 
         stack = [(0, [0])]

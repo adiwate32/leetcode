@@ -25,7 +25,6 @@ from typing import List
 
 class Solution:
     def uniquePathsWithObstacles(self, mat: List[List[int]]) -> int:
-
         mat[0][0] = 1 if mat[0][0] == 0 else 0
         rows = len(mat)
         cols = len(mat[0])

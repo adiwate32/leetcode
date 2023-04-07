@@ -16,7 +16,6 @@ from typing import List
 
 
 def spiralOrder(matrix: List[List[int]]) -> List[int]:
-
     rows = len(matrix)
     cols = len(matrix[0])
 
@@ -27,9 +26,7 @@ def spiralOrder(matrix: List[List[int]]) -> List[int]:
     res = []
 
     while len(res) < cols * rows:
-
         for col in range(left, right + 1):
-
             res.append(matrix[up][col])
 
         for row in range(up + 1, down + 1):

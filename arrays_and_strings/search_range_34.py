@@ -27,19 +27,14 @@ from typing import List
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         def search(nums, first=True):
-
             left, right = 0, len(nums) - 1
 
             while left <= right:
-
                 mid = (left + right) // 2
 
                 if nums[mid] == target:
-
                     if first:
-
                         if mid == left or nums[mid - 1] < target:
-
                             return mid
 
                         else:
@@ -47,7 +42,6 @@ class Solution:
 
                     else:
                         if mid == right or nums[mid + 1] > target:
-
                             return mid
 
                         else:

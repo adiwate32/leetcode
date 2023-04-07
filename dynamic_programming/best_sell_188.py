@@ -23,11 +23,9 @@ import math
 
 class Solution:
     def maxProfit(self, k: int, prices: List[int]) -> int:
-
         dp = {}
 
         def dfs(i, buying, t):
-
             if i >= len(prices) or t >= k:
                 return 0
 

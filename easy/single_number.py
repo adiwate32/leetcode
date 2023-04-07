@@ -21,7 +21,6 @@ from typing import List
 
 
 def single_number(nums: List[int]) -> bool:
-
     freq = Counter(nums)
     freq_sort = dict(sorted(freq.items(), key=lambda item: item[1]))
 

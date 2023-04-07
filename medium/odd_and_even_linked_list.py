@@ -18,6 +18,7 @@
 
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -26,7 +27,6 @@ class ListNode:
 
 
 def oddEvenList(head: Optional[ListNode]) -> Optional[ListNode]:
-
     # Check if the input is None
     if not head:
         return None
@@ -40,7 +40,6 @@ def oddEvenList(head: Optional[ListNode]) -> Optional[ListNode]:
 
     # Traverse the linked list
     while even and even.next:
-
         # Link the next odd-indexed node to the current even-indexed node
         odd.next = even.next
 

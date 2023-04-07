@@ -19,13 +19,11 @@
 
 
 def count_primes(n: int) -> int:
-
     count = 0
 
     seen_num = [0] * n
 
     for num in range(2, n):
-
         if seen_num[num]:
             continue
 

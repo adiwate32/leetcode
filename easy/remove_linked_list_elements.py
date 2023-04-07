@@ -16,6 +16,7 @@
 
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -24,7 +25,6 @@ class ListNode:
 
 
 def remove_elements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
-
     while head and head.val == val:
         head = head.next
 
@@ -32,7 +32,6 @@ def remove_elements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
 
     while temp:
         while temp and temp.next and temp.next.val == val:
-
             temp.next = temp.next.next
         temp = temp.next
 

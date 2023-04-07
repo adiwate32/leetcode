@@ -17,6 +17,7 @@
 
 from typing import Optional
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -27,11 +28,9 @@ class TreeNode:
 
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-
         return self.isMirror(root.left, root.right)
 
     def isMirror(self, left, right):
-
         if not left and not right:
             return True
 

@@ -24,11 +24,9 @@ from typing import List
 
 class Solution:
     def findTargetSumWays(self, nums: List[int], target: int) -> int:
-
         dp = {}
 
         def backtrack(i, total):
-
             if i < 0:
                 return 1 if total == target else 0
 

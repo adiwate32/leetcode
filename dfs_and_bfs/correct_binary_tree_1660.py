@@ -34,11 +34,9 @@ class TreeNode:
 
 class Solution:
     def correctBinaryTree(self, root: TreeNode) -> TreeNode:
-
         q = [root]
 
         while q:
-
             size = len(q)
             seen = [root]
             for _ in range(size):

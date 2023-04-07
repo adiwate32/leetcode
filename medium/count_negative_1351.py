@@ -16,7 +16,6 @@ from typing import List
 
 class Solution:
     def countNegatives(self, grid: List[List[int]]) -> int:
-
         i, j = len(grid) - 1, 0
 
         count = 0

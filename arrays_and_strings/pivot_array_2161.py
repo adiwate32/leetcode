@@ -30,7 +30,6 @@ from typing import List
 
 class Solution:
     def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
-
         n = len(nums)
         left, right = 0, n - 1
         ans = [pivot] * n

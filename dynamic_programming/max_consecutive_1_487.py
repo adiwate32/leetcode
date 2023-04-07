@@ -22,14 +22,12 @@ from typing import List
 
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
-
         l = 0
         r = 0
         max_ans = 0
         zeroes = 0
 
         while r < len(nums):
-
             if nums[r] == 0:
                 zeroes += 1
 

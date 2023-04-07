@@ -38,7 +38,6 @@ def is_balanced(root: Optional[TreeNode]) -> bool:
 
 
 def get_height(root: Optional[TreeNode]) -> int:
-
     if not root:
         return 0
 

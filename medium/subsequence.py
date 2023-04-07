@@ -16,7 +16,6 @@
 
 
 def isSubsequence(s: str, t: str) -> bool:
-
     source_len = len(s)
     target_len = len(t)
 
@@ -26,11 +25,8 @@ def isSubsequence(s: str, t: str) -> bool:
     dp = [[0] * (target_len + 1) for _ in range(source_len + 1)]
 
     for col in range(1, target_len + 1):
-
         for row in range(1, source_len + 1):
-
             if s[row - 1] == t[col - 1]:
-
                 dp[row][col] = dp[row - 1][col - 1] + 1
 
             else:

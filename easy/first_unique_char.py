@@ -18,11 +18,9 @@
 
 
 def firstUniqChar(s: str) -> int:
-
     index_map = {}
 
     for i, char in enumerate(s):
-
         if char not in index_map:
             index_map[char] = 1
         else:

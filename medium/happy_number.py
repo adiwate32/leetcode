@@ -26,17 +26,14 @@
 
 
 def isHappy(n: int) -> bool:
-
     s = set()
 
     while n not in s:
-
         s.add(n)
 
         temp = 0
 
         while n != 0:
-
             temp += (n % 10) ** 2
 
             n = n // 10

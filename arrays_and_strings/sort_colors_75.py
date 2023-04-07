@@ -29,7 +29,6 @@ class Solution:
         p2 = len(nums) - 1
 
         while curr <= p2:
-
             if nums[curr] == 0:
                 # If the current element is 0, swap it with the element at p0, increment p0 and curr
                 nums[curr], nums[p0] = nums[p0], nums[curr]

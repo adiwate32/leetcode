@@ -13,6 +13,7 @@ https://leetcode.com/problems/deepest-leaves-sum/description/
 """
 from typing import Optional
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -23,7 +24,6 @@ class TreeNode:
 
 class Solution:
     def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:
-
         deepest_sum = depth = 0
 
         stack = [(root, 0)]

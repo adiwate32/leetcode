@@ -18,7 +18,6 @@
 
 
 def word_pattern(pattern: str, s: str) -> bool:
-
     index_mapping = {}
 
     words = s.split(" ")

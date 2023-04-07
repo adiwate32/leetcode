@@ -22,7 +22,6 @@ Explanation: s becomes "c" while t becomes "b".
 
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
-
         q1 = []
         q2 = []
         for i in range(len(s)):

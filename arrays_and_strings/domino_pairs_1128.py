@@ -16,12 +16,10 @@ from typing import List
 
 class Solution:
     def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
-
         hash_map = {}
         cn = 0
 
         for d in dominoes:
-
             big = max(d[0], d[1])
             small = min(d[0], d[1])
 

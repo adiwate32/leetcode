@@ -23,7 +23,6 @@
 
 
 def climb_stairs(n: int) -> int:
-
     if n <= 2:
         return n
 
@@ -31,7 +30,6 @@ def climb_stairs(n: int) -> int:
     second = 2
 
     for _ in range(3, n + 1):
-
         third = first + second
         first = second
         second = third
@@ -42,7 +40,6 @@ def climb_stairs(n: int) -> int:
 # dynamic programming
 class Solution:
     def climbStairs(self, n: int) -> int:
-
         dp = [0] * (n + 1)
 
         if n == 1:

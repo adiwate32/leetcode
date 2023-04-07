@@ -25,7 +25,6 @@
 
 class Solution:
     def findTheLongestBalancedSubstring(self, s: str) -> int:
-
         max_ans = 0
         zero_cnt = 0
         one_cnt = 0

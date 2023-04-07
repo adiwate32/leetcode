@@ -20,7 +20,6 @@ from typing import List
 
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-
         max_p = nums[0]
         min_p = nums[0]
 

@@ -18,7 +18,6 @@ from typing import List
 
 class Solution:
     def maxSubArrayLen(self, nums: List[int], k: int) -> int:
-
         hash_map = {}
         prefix_sum = max_len = 0
 

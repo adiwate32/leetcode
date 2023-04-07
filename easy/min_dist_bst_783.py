@@ -12,6 +12,7 @@
 
 from typing import Optional
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -22,7 +23,6 @@ class TreeNode:
 
 class Solution:
     def minDiffInBST(self, root: Optional[TreeNode]) -> int:
-
         bst_lst = []
 
         def inoder_traversal(root):
@@ -38,7 +38,6 @@ class Solution:
         diff = float("inf")
 
         for i in range(len(bst_lst) - 1):
-
             if bst_lst[i + 1] - bst_lst[i] < diff:
                 diff = bst_lst[i + 1] - bst_lst[i]
 

@@ -25,11 +25,9 @@ from typing import List
 
 class Solution:
     def leftRigthDifference(self, nums: List[int]) -> List[int]:
-
         diff_sum = []
 
         for i in range(len(nums)):
-
             diff_sum.append(abs(sum(nums[:i]) - sum(nums[i + 1 :])))
 
         return diff_sum

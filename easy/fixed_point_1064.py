@@ -22,7 +22,6 @@ from typing import List
 
 class Solution:
     def fixedPoint(self, arr: List[int]) -> int:
-
         left, right = 0, len(arr) - 1
         ans = -1
 

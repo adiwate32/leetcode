@@ -22,7 +22,6 @@ from typing import List
 
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-
         nums.sort()
 
         left, right = 0, len(nums) - 1

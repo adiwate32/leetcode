@@ -17,7 +17,6 @@ from collections import Counter
 
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-
         # Get the length of the window to search for
         window = len(s1)
 

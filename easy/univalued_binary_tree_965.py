@@ -13,6 +13,7 @@
 a
 from typing import Optional
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -23,7 +24,6 @@ class TreeNode:
 
 class Solution:
     def isUnivalTree(self, root: Optional[TreeNode]) -> bool:
-
         val = root.val
 
         def inorder(root):

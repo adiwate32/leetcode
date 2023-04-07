@@ -26,16 +26,13 @@ class TreeNode:
 
 
 def pre_order_traversal(root: Optional[TreeNode]) -> List[int]:
-
     stack = [root]
 
     res = []
 
     while stack:
-
         node = stack.pop()
         if node:
-
             res.append(node.val)
             stack.append(node.right)
             stack.append(node.left)

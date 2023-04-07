@@ -23,6 +23,7 @@ Output: []
 
 from typing import Optional
 
+
 # Definition for a Node.
 class Node:
     def __init__(
@@ -40,13 +41,11 @@ class Node:
 
 class Solution:
     def connect(self, root: "Optional[Node]") -> "Optional[Node]":
-
         if not root:
             return root
         q = [root]
 
         while q:
-
             size = len(q)
             for i in range(size):
                 node = q.pop(0)

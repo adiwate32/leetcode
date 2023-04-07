@@ -23,14 +23,12 @@ from typing import List
 
 
 def maxProfit(prices: List[int]) -> int:
-
     if not prices:
         return 0
 
     minp, maxprofit = prices[0], 0
 
     for i in range(len(prices)):
-
         maxprofit = max(maxprofit, prices[i] - minp)
         minp = min(minp, prices[i])
 

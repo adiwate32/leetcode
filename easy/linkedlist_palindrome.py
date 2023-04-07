@@ -15,6 +15,7 @@
 
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -23,7 +24,6 @@ class ListNode:
 
 
 def isPalindrome(head: Optional[ListNode]) -> bool:
-
     # Set a temporary variable to the head of the linked list.
     temp = head
 
@@ -40,10 +40,8 @@ def isPalindrome(head: Optional[ListNode]) -> bool:
 
     # Iterate over the array, comparing values at the two pointers.
     for i in range(len(arr)):
-
         # While the left pointer is less than or equal to the right pointer...
         while left <= right:
-
             # If the values at the left and right pointers don't match, the list is not a palindrome.
             if arr[left] != arr[right]:
                 return False

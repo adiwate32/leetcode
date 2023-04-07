@@ -14,14 +14,12 @@
 
 
 def add_binary(a: str, b: str) -> str:
-
     ans_stack = []
     carry = 0
     lst_a = list(a)
     lst_b = list(b)
 
     while lst_a or lst_b or carry:
-
         a_val = int(lst_a.pop()) if lst_a else 0
         b_val = int(lst_b.pop()) if lst_b else 0
 

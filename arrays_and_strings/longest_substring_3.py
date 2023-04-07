@@ -24,16 +24,15 @@
 
 from collections import Counter
 
+
 # two pointer
 def length_of_sub_string(s: str) -> int:
-
     cntr = Counter()
 
     left = right = 0
 
     ans = 0
     while right < len(s):
-
         r = s[right]
         cntr[r] += 1
 
@@ -51,7 +50,6 @@ def length_of_sub_string(s: str) -> int:
 # sliding window
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-
         d = {}
         i = 0
         max_c = 0
