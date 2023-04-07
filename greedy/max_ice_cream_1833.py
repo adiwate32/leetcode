@@ -26,6 +26,7 @@ Explanation: The boy can buy all the ice cream bars for a total price of 1 + 6 +
 """
 from typing import List
 
+
 class Solution:
     def maxIceCream(self, costs: List[int], coins: int) -> int:
         costs.sort()
