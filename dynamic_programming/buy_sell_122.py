@@ -40,22 +40,16 @@ def maxProfit(prices: List[int]) -> int:
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        dp = {}
 
-        def dfs(i, buying):
-            if i >= len(prices):
-                return 0
+        n = len(prices)
+        dp = [[0] * 2 for _ in range(n)]
 
-            if (i, buying) in dp:
-                return dp[(i, buying)]
-            no_stock = dfs(i + 1, buying)
-            if buying:
-                profit = dfs(i + 1, not buying) - prices[i]
-            else:
-                profit = dfs(i + 1, not buying) + prices[i]
+        dp[0][0] = -prices[0]
+        dp[0][1] = 0
 
-            dp[(i, buying)] = max(no_stock, profit)
+        for i in range(1, n):
 
-            return dp[(i, buying)]
+            dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] + prices[i])
+            dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] - prices[i])
 
-        return dfs(0, True)
+        return dp[n - 1][1]

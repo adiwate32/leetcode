@@ -78,3 +78,14 @@ class Solution:
 
         res = max(dp[n - 1][j][0] for j in range(k + 1))
         return res
+
+    # one more solution
+    def maxProfit(self, k: int, prices: List[int]) -> int:
+        n = len(prices)
+        dp = [[[0] * 2 for _ in range(k + 1)] for _ in range(n + 1)]
+
+        for j in range(n - 1, -1, -1):
+            for k in range(1, k + 1):
+                dp[j][k][0] = max(dp[j + 1][k][0], dp[j + 1][k - 1][1] + prices[j])
+                dp[j][k][1] = max(dp[j + 1][k][1], dp[j + 1][k][0] - prices[j])
+        return dp[0][k][1]
