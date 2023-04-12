@@ -49,3 +49,36 @@ class Solution:
                 return False
 
         return True
+
+
+# topological sort
+from collections import defaultdict, deque
+
+
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+
+        graph = defaultdict(list)
+        pre_map = [0] * numCourses
+
+        for cr in prerequisites:
+            graph[cr[1]].append(cr[0])
+            pre_map[cr[0]] += 1
+
+        q = []
+        for i in range(numCourses):
+            if pre_map[i] == 0:
+                q.append(i)
+
+        while q:
+            pre = q.pop(0)
+
+            for cr in graph[pre]:
+                pre_map[cr] -= 1
+
+                if pre_map[cr] == 0:
+                    q.append(cr)
+
+            numCourses -= 1
+
+        return numCourses == 0
