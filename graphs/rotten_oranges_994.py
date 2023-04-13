@@ -27,7 +27,6 @@ from typing import List
 
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
-
         q = []
         rows = len(grid)
         cols = len(grid[0])

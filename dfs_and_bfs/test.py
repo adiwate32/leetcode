@@ -2,7 +2,6 @@ class Solution:
     # @param A : list of integers
     # @return an integer
     def solve(self, A):
-
         min_val = min(A)
         n = len(A)
 

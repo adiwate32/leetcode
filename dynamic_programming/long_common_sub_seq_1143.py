@@ -25,7 +25,6 @@ Explanation: There is no such common subsequence, so the result is 0.
 
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
-
         rows = len(text1)
         cols = len(text2)
 
@@ -41,7 +40,6 @@ class Solution:
         return dp[rows][cols]
 
     def PrintLongestCommonSubsequence(self, text1: str, text2: str) -> int:
-
         rows = len(text1)
         cols = len(text2)
 

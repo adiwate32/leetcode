@@ -19,13 +19,11 @@ Explanation: There are 11 children but only 7 candies in total, so it is impossi
 
 class Solution:
     def maximumCandies(self, candies: List[int], k: int) -> int:
-
         n = len(candies)
 
         l, r = 0, sum(candies) // k
 
         while l < r:
-
             mid = (l + r + 1) // 2
 
             if k > sum(a // mid for a in candies):

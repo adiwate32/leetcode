@@ -21,7 +21,6 @@ from typing import List
 
 class Solution:
     def minimizeMax(self, nums: List[int], p: int) -> int:
-
         n = len(nums)
         nums.sort()
         l, r = 0, nums[-1] - nums[0]

@@ -26,7 +26,6 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-
         n = len(prices)
         dp = [[[0] * 2 for _ in range(3)] for _ in range(n + 1)]
 

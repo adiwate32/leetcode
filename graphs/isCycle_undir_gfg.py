@@ -48,7 +48,6 @@ class Solution:
 # {
 # Driver Code Starts
 if __name__ == "__main__":
-
     T = int(input())
     for i in range(T):
         V, E = map(int, input().split())

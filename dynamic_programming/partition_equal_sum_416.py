@@ -15,7 +15,6 @@ Explanation: The array cannot be partitioned into equal sum subsets.
 
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
-
         total = sum(nums)
 
         if total % 2 != 0:

@@ -28,7 +28,6 @@ graph is 5, 4, 2, 1, 3, 0.
 
 
 class Solution:
-
     # Function to return list containing vertices in Topological order.
     def topoSort(self, V, adj):
         # Code here

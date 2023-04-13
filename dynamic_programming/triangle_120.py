@@ -27,7 +27,6 @@ class Solution:
         for r in range(1, rows):
             cols = len(mat[r])
             for c in range(cols):
-
                 if c == 0:
                     mat[r][c] += mat[r - 1][0]
 

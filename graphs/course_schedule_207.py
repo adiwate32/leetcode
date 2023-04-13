@@ -57,7 +57,6 @@ from collections import defaultdict, deque
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-
         graph = defaultdict(list)
         pre_map = [0] * numCourses
 

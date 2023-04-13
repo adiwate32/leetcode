@@ -23,6 +23,7 @@
 """
 from typing import List
 
+
 # bottom up approach
 class Solution:
     def maxProfit(self, prices: List[int], fee: int) -> int:
@@ -40,7 +41,6 @@ class Solution:
 
     # top down approach
     def maxProfit(self, prices: List[int], fee: int) -> int:
-
         n = len(prices)
         dp = [[0] * 2 for _ in range(n + 1)]
 
