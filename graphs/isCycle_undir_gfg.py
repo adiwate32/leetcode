@@ -38,7 +38,7 @@ class Solution:
             for nei in adj[node]:
                 if not vis[nei]:
                     vis[nei] = True
-                    q.append((nei, node))
+                    q.append((nei, node))   
 
                 elif par != nei:
                     return True

@@ -39,7 +39,7 @@ class Solution:
             else:
                 dp[i] = min(
                     (dp[max(0, i - 1)] + costs[0]),
-                    (dp[max(0, i - 7)] + costs[1]),
+                    (dp[max(0, i - 7)] + costs[1]), 
                     (dp[max(0, i - 30)] + costs[2]),
                 )
 
